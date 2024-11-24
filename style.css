@@ -1,0 +1,174 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Navbar Styles */
+header .navbar {
+    width: 100%;
+    position: fixed;
+    padding: 20px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between;
+    background-color: rgba(71, 71, 71, 0.8);
+    color: #ffffff;
+    z-index: 10;
+}
+
+.navbar .logo img {
+    position: absolute;
+    top: 12px;
+}
+
+.nav-links {
+    display: flex; /* Use flexbox for nav links */
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-links li a {
+    margin: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+    transition: color 0.3s ease; /* Smooth transition for color */
+}
+
+.nav-links li a:hover {
+    color: rgb(0, 187, 255);
+    text-decoration: underline;
+}
+
+/* Hero Section Styles */
+.container1 {
+    width: 100%;
+    height: 400%;
+    background: url(https://img.freepik.com/free-photo/view-majestic-jellyfish-ocean_23-2150720146.jpg?ga=GA1.1.24328383.1694452068&semt=ais_hybrid) no-repeat center center/cover; /* Simplified background property */
+    background-blend-mode: soft-light;
+    position: relative;
+    overflow: hidden; /* Ensures no elements overflow */
+}
+
+/* Section 1 Styles */
+.sec1 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.video-overlay {
+    width: 400px;
+    height: 400px;
+    position: absolute; 
+    left: 27%;
+    top: 20%;
+    z-index: 2;
+}
+
+.video-overlay img {
+    width: 100%;
+    height: 100%;
+}
+
+.container1 .content-box {
+    position: relative;
+    width: 60%;
+    height: 45vh;
+    padding: 20px;
+    text-align: center;
+    z-index: 1; /* Keeps content above the blurred background */
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.container1 .content-box h1 {
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.container1 .content-box .lower-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.lower-content .right {
+    width: 250px;
+    text-align: left;
+}
+
+/* Section 2 Styles */
+.sec2 {
+    height: 100vh;
+    display: flex; /* Added display flex for alignment */
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.container1 .sec2 .left-content {
+    position: relative;
+    width: 40%;
+    height: 55vh;
+    padding: 25px;
+    text-align: center;
+    z-index: 0; /* Keeps content above the blurred background */
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container1 .sec2 .left-content h1 {
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.container1 .right {
+    width: 40%;
+}
+
+/* Section 3 Styles */
+.sec3 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(241, 144, 117, 0.5);
+    display: flex; /* Added display flex for alignment */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sec3 .right-content{
+    position: relative;
+    width: 40%;
+    height: 55vh;
+    padding: 25px;
+    text-align: center;
+    z-index: 0; /* Keeps content above the blurred background */
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.right-content h1{
+    font-weight: 900;
+    font-size: 5rem;
+}
+/* cards sec */
+.card-img-top {
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
